@@ -8,9 +8,11 @@ package com.exclus.talkincolorsquares;
  * To change this template use File | Settings | File Templates.
  */
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.ImageButton;
 import android.widget.ViewFlipper;
 import android.view.*;
 import android.widget.Toast;
@@ -19,10 +21,14 @@ import android.view.animation.Animation;
 import com.tekle.oss.android.animation.AnimationFactory;
 import com.tekle.oss.android.animation.AnimationFactory.FlipDirection;
 
+import static com.exclus.talkincolorsquares.R.id.button1;
+
 public class SuxActivity extends Activity
 {
     private ViewFlipper[] vf;
     private ViewFlipper bigVf;
+    private ImageButton[] buttons;
+    private ImageButton sButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +50,9 @@ public class SuxActivity extends Activity
 
         bigVf = (ViewFlipper) findViewById(R.id.mainFlipper);
 //        vf = (ViewFlipper) findViewById(R.id.viewFlipper1);
+
+        sButton = (ImageButton) findViewById(button1);
+        sButton.setImageResource(R.drawable.blue);
     }
 
     @Override
@@ -55,7 +64,7 @@ public class SuxActivity extends Activity
 
     public void onClickBtn(View v)
     {
-        Toast.makeText(this, "Clicked on Button", Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "Clicked on Button", Toast.LENGTH_LONG).show();
 //		vf.setInAnimation(this, R.anim.in_from_left);
 //
 //		vf.setOutAnimation(this, R.anim.out_to_right);
@@ -74,24 +83,26 @@ public class SuxActivity extends Activity
 
 //		vf.showNext();
 
-//        View sux = vf.getCurrentView();
 
-        View sux = (View) v.getParent();
+
+//        View sux = (View) v.getParent();
         ViewFlipper vf = (ViewFlipper) v.getParent();
-        Animation[] animc = AnimationFactory.flipAnimation(vf.getCurrentView(), vf.getCurrentView(), FlipDirection.LEFT_RIGHT, 1000, null);
-        Animation[] animx = AnimationFactory.flipAnimation(vf.getCurrentView(), vf.getCurrentView(), FlipDirection.RIGHT_LEFT, 1000, null);
+//        Animation[] animc = AnimationFactory.flipAnimation(vf.getCurrentView(), vf.getCurrentView(), FlipDirection.LEFT_RIGHT, 1000, null);
+//        Animation[] animx = AnimationFactory.flipAnimation(vf.getCurrentView(), vf.getCurrentView(), FlipDirection.RIGHT_LEFT, 1000, null);
 
-        vf.setOutAnimation(animc[1]);
-        vf.setInAnimation(animc[0]);
+//        vf.setOutAnimation(animc[1]);
+//        vf.setInAnimation(animc[0]);
+
+        AnimationFactory.flipTransition(vf, FlipDirection.LEFT_RIGHT);
 
 //        vf.showNext();
 
-        vf.setFlipInterval(1000);
-        vf.startFlipping();
+//        vf.setFlipInterval(1000);
+//        vf.startFlipping();
 //	       vf.setOutAnimation(animc[0]);
 //	        vf.setInAnimation(animc[1]);
 
-        vf.showPrevious();
+//        vf.showPrevious();
 
     }
 }
