@@ -24,8 +24,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2315585-1acb-4785-9772-dc968c377d5e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/exclus/talkincolorsquares/SuxActivity.java" afterPath="$PROJECT_DIR$/src/com/exclus/talkincolorsquares/SuxActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_sux.xml" afterPath="$PROJECT_DIR$/res/layout/activity_sux.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/anim/magnify.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/anim/in_from_left.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/anim/in_from_right.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/anim/out_to_left.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/anim/out_to_right.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/activity_sux.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/layout/blabla.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/exclus/talkincolorsquares/SuxActivity.java" afterPath="$PROJECT_DIR$/src/com/exclus/talkincolorsquares/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/AndroidManifest.xml" afterPath="$PROJECT_DIR$/bin/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TalkinColorSquares.iws" />
@@ -43,17 +52,18 @@
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/relaxng.rng" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1367762743295" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-1_0.xsd" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1367762743295" ignored="false" />
     <file path="/fragment.java" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1368865761966" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1367787589559" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1376773536132" ignored="false" />
     <file path="/roundshapebtn.xml" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1369154436432" ignored="false" />
     <file path="/Dummy.txt" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1375991885488" ignored="false" />
     <file path="/sux.java" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1367784957656" ignored="false" />
     <file path="/sux.xml" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1367790323766" ignored="false" />
-    <file path="/SuxActivity.java" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1376254046810" ignored="false" />
+    <file path="/SuxActivity.java" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1376772256512" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1371078243110" ignored="false" />
     <file path="$PROJECT_DIR$/../blablatest/src/main.java" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1369086948903" ignored="false" />
     <file path="/a.xml" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1369428471796" ignored="false" />
-    <file path="/activity_sux.xml" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1376243103570" ignored="false" />
+    <file path="/activity_sux.xml" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1376687572348" ignored="false" />
     <file path="/buttonimage.xml" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1369431306502" ignored="false" />
+    <file path="/magnify.xml" changelist="b2315585-1acb-4785-9772-dc968c377d5e" time="1376688685534" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +115,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/exclus/talkincolorsquares/MainActivity.java" line="182" class="com.exclus.talkincolorsquares.MainActivity" package="com.exclus.talkincolorsquares">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -114,10 +141,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activity_sux.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/activity_sux.xml">
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="33" selection-start="833" selection-end="833" vertical-scroll-proportion="0.5670103">
+            <state line="44" column="40" selection-start="1577" selection-end="1577" vertical-scroll-proportion="-20.580645">
               <folding />
             </state>
           </provider>
@@ -126,18 +153,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SuxActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/exclus/talkincolorsquares/SuxActivity.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/exclus/talkincolorsquares/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="187" column="50" selection-start="6897" selection-end="6897" vertical-scroll-proportion="0.0">
+            <state line="193" column="92" selection-start="7013" selection-end="7013" vertical-scroll-proportion="0.64358974">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5105#5377#0" expanded="true" />
-                <element signature="e#5366#5367#0" expanded="true" />
-                <element signature="e#6092#6364#0" expanded="true" />
-                <element signature="e#6353#6354#0" expanded="true" />
-                <element signature="e#7117#7118#0" expanded="true" />
+                <element signature="e#5319#5591#0" expanded="true" />
+                <element signature="e#5580#5581#0" expanded="true" />
+                <element signature="e#6308#6580#0" expanded="true" />
+                <element signature="e#6569#6570#0" expanded="true" />
+                <element signature="e#7058#7330#0" expanded="true" />
+                <element signature="e#7319#7320#0" expanded="true" />
+                <element signature="e#9725#10816#0" expanded="true" />
+                <element signature="e#10809#10810#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="magnify.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/anim/magnify.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="21" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../android-sdk-macosx/sources/android-17/android/view/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3043" column="0" selection-start="114277" selection-end="114277" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,7 +193,16 @@
       <file leaf-file-name="buttonimage.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/drawable/buttonimage.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="25" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+            <state line="4" column="11" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="49" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,7 +211,7 @@
       <file leaf-file-name="roundshapebtn.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/drawable/roundshapebtn.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="39" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
+            <state line="20" column="8" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -163,16 +220,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="11" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/exclus/talkincolorsquares/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="43" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
+            <state line="13" column="39" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -200,11 +248,13 @@
         <option value="$PROJECT_DIR$/res/layout/blabla.xml" />
         <option value="$PROJECT_DIR$/res/layout/sux.xml" />
         <option value="$PROJECT_DIR$/src/com/exclus/talkincolorsquares/sux.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/drawable/roundshapebtn.xml" />
         <option value="$PROJECT_DIR$/res/drawable/buttonimage.xml" />
         <option value="$PROJECT_DIR$/res/layout/activity_sux.xml" />
+        <option value="$PROJECT_DIR$/res/anim/magnify.xml" />
         <option value="$PROJECT_DIR$/src/com/exclus/talkincolorsquares/SuxActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/exclus/talkincolorsquares/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -236,7 +286,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -292,6 +342,10 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="animation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -343,7 +397,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
+              <option name="myItemId" value="menu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,25 +415,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="raw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TalkinColorSquares" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TalkinColorSquares" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
+              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,6 +445,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.sourceCode.XML" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/animatedview" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
@@ -608,8 +645,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32894737" sideWeight="0.6949429" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.6704731" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3050571" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -622,12 +660,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14673047" sideWeight="0.6949429" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5382114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5375204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33054227" sideWeight="0.69430894" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31698564" sideWeight="0.69430894" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -698,21 +735,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../android-sdk-macosx/sources/android-17/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="663" column="158" selection-start="33161" selection-end="33161" vertical-scroll-proportion="0.6075949" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TalkinColorSquares.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="33" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.project">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -738,37 +760,9 @@
         <state line="19" column="26" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/exclus/talkincolorsquares/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="43" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="11" selection-start="1022" selection-end="1022" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/roundshapebtn.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="39" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/buttonimage.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="25" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../android-sdk-macosx/sources/android-17/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3042" column="0" selection-start="114247" selection-end="114247" vertical-scroll-proportion="0.0">
+        <state line="20" column="8" selection-start="635" selection-end="635" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -778,28 +772,73 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/exclus/talkincolorsquares/SuxActivity.java">
+    <entry file="file://$PROJECT_DIR$/../../../android-sdk-macosx/sources/android-17/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="50" selection-start="6897" selection-end="6897" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5105#5377#0" expanded="true" />
-            <element signature="e#5366#5367#0" expanded="true" />
-            <element signature="e#6092#6364#0" expanded="true" />
-            <element signature="e#6353#6354#0" expanded="true" />
-            <element signature="e#7117#7118#0" expanded="true" />
-          </folding>
+        <state line="3043" column="0" selection-start="114277" selection-end="114277" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_sux.xml">
+    <entry file="file://$PROJECT_DIR$/res/anim/magnify.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="33" selection-start="833" selection-end="833" vertical-scroll-proportion="0.5670103">
+        <state line="10" column="21" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tekle/oss/android/animation/AnimationFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="355" column="22" selection-start="13312" selection-end="13312" vertical-scroll-proportion="0.6270136">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="40" selection-start="1577" selection-end="1577" vertical-scroll-proportion="-20.580645">
           <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="39" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/buttonimage.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="11" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="49" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/exclus/talkincolorsquares/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="92" selection-start="7013" selection-end="7013" vertical-scroll-proportion="0.64358974">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5319#5591#0" expanded="true" />
+            <element signature="e#5580#5581#0" expanded="true" />
+            <element signature="e#6308#6580#0" expanded="true" />
+            <element signature="e#6569#6570#0" expanded="true" />
+            <element signature="e#7058#7330#0" expanded="true" />
+            <element signature="e#7319#7320#0" expanded="true" />
+            <element signature="e#9725#10816#0" expanded="true" />
+            <element signature="e#10809#10810#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
