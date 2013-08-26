@@ -24,6 +24,12 @@ import com.tekle.oss.android.animation.AnimationFactory.FlipDirection;
 
 import android.media.MediaPlayer;
 
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+
+//import com.exclus.talkincolorsquares.GestureListener;
+
+
 import java.util.Random;
 
 public class MainActivity extends Activity
@@ -32,7 +38,7 @@ public class MainActivity extends Activity
     private ViewFlipper bigVf;
     private ImageButton[] buttons;
     private ImageButton sButton;
-    private String[] numbers = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "eighteen", "nineteen", "twenty"};
+    private String[] numbers = { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"};
     private String[] colors = {"blue", "yellow", "green", "orange", "black", "white", "brown", "pink", "gray", "red"};
 
     private boolean screenLock = false;
@@ -45,12 +51,32 @@ public class MainActivity extends Activity
     private Integer currentNumber = 0;
     private Integer[] songMarkers = {0, 1000, 500, 1000, 900, 700, 800, 1000,1000,1000};
 
+    private boolean isMoreNumbers = false;
+    private Integer[] buttonArrangment;
+
+
+    private GestureDetector mGestureDetector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        screenLock = true;
+
+        MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.hello);
+
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                //To change body of implemented methods use File | Settings | File Templates.
+                screenLock = false;
+            }
+        });
+        mediaPlayer.start(); // no need to call prepare(); create() does that for you
+
+        buttonArrangment = createButtonArrangment();
 
         vf = new ViewFlipper[20];
 
@@ -109,32 +135,33 @@ public class MainActivity extends Activity
             ss[1].setImageResource(getResources().getIdentifier(colors[i],
                     "drawable", getPackageName()));
         }
+
+        // Bind the gestureDetector to GestureListener
+        mGestureDetector = new GestureDetector(this, new GestureListener());
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.main, menu);
+//        return true;
+//    }
 
     public void onClickBtn(View v)
     {
         if (screenLock) return;
         screenLock = true;
 
-        ViewFlipper vx;
+        ViewFlipper vf;
         if (modeIsNumbers)
-            vx = (ViewFlipper) v.getParent().getParent();
+            vf = (ViewFlipper) v.getParent().getParent();
         else
-            vx = (ViewFlipper) v.getParent();
+            vf = (ViewFlipper) v.getParent();
 
-        Toast.makeText(this, vx.getTag().toString(), Toast.LENGTH_LONG).show();
-//        Toast.makeText(this, v.getId(), Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, vf.getTag().toString(), Toast.LENGTH_LONG).show();
 
-        MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, getResources().getIdentifier(vx.getTag().toString(),
+        MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, getResources().getIdentifier(vf.getTag().toString(),
                 "raw", getPackageName()));
-//        MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.six);
 
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 
@@ -145,13 +172,6 @@ public class MainActivity extends Activity
             }
         });
         mediaPlayer.start(); // no need to call prepare(); create() does that for you
-
-        ViewFlipper vf;
-
-        if (modeIsNumbers)
-            vf = (ViewFlipper) v.getParent().getParent();
-        else
-            vf = (ViewFlipper) v.getParent();
 
         AnimationFactory.flipTransition(vf, FlipDirection.LEFT_RIGHT);
     }
@@ -190,7 +210,11 @@ public class MainActivity extends Activity
 
         MediaPlayer mediaPlayer;
 
-        mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.numberssong);
+        if (isMoreNumbers)
+            mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.mathsong);
+
+        else
+            mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.numberssong);
 
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 
@@ -202,32 +226,29 @@ public class MainActivity extends Activity
         });
         mediaPlayer.start(); // no need to call prepare(); create() does that for you
 
-        newHandler.removeCallbacks(newUpdateTask);
-        newHandler.post(newUpdateTask);
+        if (! isMoreNumbers) {
+            newHandler.removeCallbacks(newUpdateTask);
+            newHandler.post(newUpdateTask);
+        }
     }
 
     //        #define randrange(N) rand() / (RAND_MAX/(N) + 1)
     private int randrange(int N)
     {
-        Integer RAND_MAX = 2147483647;
+        Integer RAND_MAX = 2147483647;  // from C++
 
         Random rand = new java.util.Random();
 
-        Log.v("nextint: ", Integer.toString(rand.nextInt(RAND_MAX)));
+//        Log.v("nextint: ", Integer.toString(rand.nextInt(RAND_MAX)));
 
         return(rand.nextInt(RAND_MAX) / (RAND_MAX / (N) + 1));
     }
 
-    public void randomClicked(View v)
+    private Integer[] createButtonArrangment()
     {
-        if (screenLock) return;
-        screenLock = true;
-
         Integer[] a = new Integer[10];
         int i;
         int nvalues = 10;
-
-        isRandom = ! isRandom;
 
         if (isRandom) {
 
@@ -249,6 +270,25 @@ public class MainActivity extends Activity
             }
         }
 
+//        buttonArrangment = a;
+
+        return a;
+    }
+
+    public void randomClicked(View v)
+    {
+        int i;
+        int nvalues = 10;
+
+        if (screenLock) return;
+        screenLock = true;
+
+        isRandom = ! isRandom;
+
+        buttonArrangment = createButtonArrangment();
+
+        Integer[] a = buttonArrangment;
+
         int startI = 0;
 
         if (modeIsNumbers)
@@ -257,33 +297,94 @@ public class MainActivity extends Activity
         else if (! modeIsNumbers)
             startI = 10;
 
-        for (i = startI; i < (nvalues + startI); i++) {
+
+        if (modeIsNumbers) {
+
+            setupNumbers(isMoreNumbers);
+
+        } else {
+
+            for (i = startI; i < (nvalues + startI); i++) {
+
+                AnimationFactory.flipTransition(vf[i], FlipDirection.LEFT_RIGHT);
+            }
+
+
+            for (i = 0; i < a.length; i++) {
+
+//                vf[i + startI].setTag(numbers[a[i] - 1]);
+//
+//                FrameLayout frameLayouts[] = {(FrameLayout) vf[i].getChildAt(0), (FrameLayout) vf[i].getChildAt(1)};
+//
+//                TextView textView[] = {(TextView) frameLayouts[0].getChildAt(1), (TextView) frameLayouts[1].getChildAt(1)};
+//
+//                textView[0].setText(Integer.toString(a[i]));
+//                textView[1].setText(Integer.toString(a[i]));
+//
+//                ImageButton ss[] = {(ImageButton) frameLayouts[0].getChildAt(0), (ImageButton) frameLayouts[1].getChildAt(0)};
+//
+//                ss[0].setImageResource(getResources().getIdentifier(colors[a[i] - 1],
+//                        "drawable", getPackageName()));
+//                ss[1].setImageResource(getResources().getIdentifier(colors[a[i] - 1],
+//                        "drawable", getPackageName()));
+
+                vf[i + startI].setTag(colors[buttonArrangment[i] - 1]);
+
+                ImageButton ss[] = {(ImageButton) vf[i + startI].getChildAt(0), (ImageButton) vf[i + startI].getChildAt(1)};
+
+                ss[0].setImageResource(getResources().getIdentifier(colors[buttonArrangment[i] - 1],
+                        "drawable", getPackageName()));
+                ss[1].setImageResource(getResources().getIdentifier(colors[buttonArrangment[i] - 1],
+                        "drawable", getPackageName()));
+
+            }
+        }
+
+        screenLock = false;
+    }
+
+    private void setupNumbers(boolean isMoreNumbers)
+    {
+        for (int i = 0; i < 10; i++) {
 
             AnimationFactory.flipTransition(vf[i], FlipDirection.LEFT_RIGHT);
         }
 
-        for (i = 0; i < a.length; i++) {
 
-            vf[i + startI].setTag(numbers[a[i] - 1]);
+        for(int i = 0; i < 10; i++){
 
-//            if (modeIsNumbers){
 
             FrameLayout frameLayouts[] = {(FrameLayout) vf[i].getChildAt(0), (FrameLayout) vf[i].getChildAt(1)};
 
             TextView textView[] = {(TextView) frameLayouts[0].getChildAt(1), (TextView) frameLayouts[1].getChildAt(1)};
 
-            textView[0].setText(Integer.toString(a[i]));
-            textView[1].setText(Integer.toString(a[i]));
+            int index;
+
+            if (isMoreNumbers) {
+
+                index = 10;
+            } else {
+
+                index = 0;
+            }
+
+            vf[i].setTag(numbers[buttonArrangment[i] + index - 1]);
+
+//            Log.v("numbers", numbers[i + index - 1]);
+
+            textView[0].setText(Integer.toString(buttonArrangment[i] + index));
+            textView[1].setText(Integer.toString(buttonArrangment[i] + index));
 
             ImageButton ss[] = {(ImageButton) frameLayouts[0].getChildAt(0), (ImageButton) frameLayouts[1].getChildAt(0)};
 
-            ss[0].setImageResource(getResources().getIdentifier(colors[a[i] - 1],
+            Log.v("button arrangment", Integer.toString(buttonArrangment[i]));
+            Log.v("Tag", vf[i].getTag().toString());
+
+            ss[0].setImageResource(getResources().getIdentifier(colors[buttonArrangment[i] - 1],
                     "drawable", getPackageName()));
-            ss[1].setImageResource(getResources().getIdentifier(colors[a[i] - 1],
+            ss[1].setImageResource(getResources().getIdentifier(colors[buttonArrangment[i] - 1],
                     "drawable", getPackageName()));
         }
-
-        screenLock = false;
     }
 
 
@@ -304,7 +405,23 @@ public class MainActivity extends Activity
             bumpAnimationSet.addAnimation(scaleUp);
             bumpAnimationSet.addAnimation(scaleDown);
 
-            vf[currentNumber].startAnimation(bumpAnimationSet);
+            int vfNumber = currentNumber;
+
+            for (int i = 0; i < 10; i++) {
+
+                FrameLayout temp = (FrameLayout) vf[i].getChildAt(0);
+                TextView tempText = (TextView) temp.getChildAt(1);
+
+                if (Integer.parseInt(tempText.getText().toString()) == (currentNumber + 1)) {
+
+                    vfNumber = i;
+                    break;
+                }
+            }
+
+            vf[vfNumber].startAnimation(bumpAnimationSet);
+
+//            Log.v("current", Integer.toString(buttonArrangment[currentNumber] - 1));
 
             currentNumber++;
 
@@ -321,6 +438,37 @@ public class MainActivity extends Activity
 
     public void buyClicked(View v)
     {
+        isMoreNumbers = ! isMoreNumbers;
+        isRandom = false;
 
+        buttonArrangment = createButtonArrangment();
+        setupNumbers(isMoreNumbers);
+    }
+
+    // onTouch() method gets called each time you perform any touch event with screen
+    @Override
+    public boolean onTouchEvent(MotionEvent event)
+    {
+        //method onTouchEvent of GestureDetector class Analyzes the given motion event
+        //and if applicable triggers the appropriate callbacks on the GestureDetector.OnGestureListener supplied.
+        //Returns true if the GestureDetector.OnGestureListener consumed the event, else false.
+
+        if (screenLock) return(false);
+
+        boolean eventConsumed = mGestureDetector.onTouchEvent(event);
+        if (eventConsumed)
+        {
+            if (GestureListener.fling) {
+//                Toast.makeText(this,GestureListener.currentGestureDetected,Toast.LENGTH_SHORT).show();
+
+                buyClicked(bigVf); // bigVF hust to have some View
+
+                GestureListener.fling = false;
+            }
+
+            return true;
+        }
+        else
+            return false;
     }
 }

@@ -15,7 +15,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
       <ImageButton
           android:layout_width="81dp"
           android:layout_height="91dp"
@@ -568,7 +567,7 @@
           android:layout_margin="5dp"
           android:textStyle="bold"
           android:textSize="18dp"
-          android:text="2"/>
+          android:text=""/>
 
 
       <ImageButton
@@ -584,7 +583,6 @@
           android:height="81dp"
           android:width="95dp"
           android:onClick="onClickBtn1"/>
-
 
     </GridLayout>
     <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
