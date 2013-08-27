@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.os.Handler;
 import android.util.Log;
-import android.view.Menu;
 import android.view.animation.AnimationSet;
 import android.view.animation.ScaleAnimation;
 import android.widget.*;
@@ -57,6 +56,8 @@ public class MainActivity extends Activity
 
     private GestureDetector mGestureDetector;
 
+    private static MediaPlayer mediaPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +65,7 @@ public class MainActivity extends Activity
 
         screenLock = true;
 
-        MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.hello);
+        mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.hello);
 
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 
@@ -75,6 +76,7 @@ public class MainActivity extends Activity
             }
         });
         mediaPlayer.start(); // no need to call prepare(); create() does that for you
+
 
         buttonArrangment = createButtonArrangment();
 
@@ -160,7 +162,7 @@ public class MainActivity extends Activity
 
 //        Toast.makeText(this, vf.getTag().toString(), Toast.LENGTH_LONG).show();
 
-        MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, getResources().getIdentifier(vf.getTag().toString(),
+        mediaPlayer = MediaPlayer.create(MainActivity.this, getResources().getIdentifier(vf.getTag().toString(),
                 "raw", getPackageName()));
 
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -176,12 +178,10 @@ public class MainActivity extends Activity
         AnimationFactory.flipTransition(vf, FlipDirection.LEFT_RIGHT);
     }
 
-    public void onClickBtn1(View v)
+    public void onClickChangeMode(View v)
     {
         if (screenLock) return;
         screenLock = true;
-
-        MediaPlayer mediaPlayer;
 
         if (modeIsNumbers)
             mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.voice2);
@@ -208,7 +208,7 @@ public class MainActivity extends Activity
         if (screenLock) return;
         screenLock = true;
 
-        MediaPlayer mediaPlayer;
+//        MediaPlayer mediaPlayer;
 
         if (isMoreNumbers)
             mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.mathsong);
@@ -386,7 +386,6 @@ public class MainActivity extends Activity
                     "drawable", getPackageName()));
         }
     }
-
 
     private Runnable newUpdateTask = new Runnable()
     {

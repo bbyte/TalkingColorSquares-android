@@ -10,6 +10,7 @@
   <ViewFlipper
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:paddingLeft="25dp"
       android:id="@+id/mainFlipper">
 
     <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,8 +18,8 @@
                 android:layout_height="wrap_content">
 
       <ImageButton
-          android:layout_width="81dp"
-          android:layout_height="91dp"
+          android:layout_width="101dp"
+          android:layout_height="111dp"
           android:id="@+id/playSongButton" android:layout_row="0" android:layout_column="0"
 
           android:scaleType="fitCenter"
@@ -29,8 +30,8 @@
       <!--android:layout_columnSpan = "0"/>-->
 
       <ImageButton
-          android:layout_width="81dp"
-          android:layout_height="91dp"
+          android:layout_width="101dp"
+          android:layout_height="111dp"
           android:src="@drawable/buy"
           android:scaleType="fitCenter"
           android:background="@android:color/transparent"
@@ -40,8 +41,8 @@
       <!--android:layout_columnSpan = "2"/>-->
 
       <ImageButton
-          android:layout_width="81dp"
-          android:layout_height="91dp"
+          android:layout_width="101dp"
+          android:layout_height="111dp"
           android:src="@drawable/random"
           android:scaleType="fitCenter"
           android:background="@android:color/transparent"
@@ -59,13 +60,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:id="@+id/button1" android:background="@android:color/transparent" android:clickable="true"
               android:src="@drawable/green"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
 
           <TextView
               android:id="@+id/textView2"
@@ -82,13 +83,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:src="@drawable/pink"
               android:id="@+id/button11" android:background="@android:color/transparent" android:clickable="true"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
 
           <TextView
               android:id="@+id/textView2"
@@ -111,13 +112,13 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content">
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:id="@+id/button2" android:background="@android:color/transparent" android:clickable="true"
               android:src="@drawable/green"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
 
           <TextView
               android:id="@+id/textView2"
@@ -135,12 +136,12 @@
 
           <ImageButton
               android:layout_width="86dp"
-              android:layout_height="95dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:src="@drawable/pink"
               android:id="@+id/button12" android:background="@android:color/transparent" android:clickable="true"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
 
           <TextView
               android:id="@+id/textView2"
@@ -164,13 +165,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
               android:src="@drawable/green"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
 
           <TextView
               android:id="@+id/textView2"
@@ -187,13 +188,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:src="@drawable/pink"
               android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
 
           <TextView
               android:id="@+id/textView2"
@@ -208,7 +209,7 @@
       </ViewFlipper>
       <ViewFlipper
           android:layout_width="105dp"
-          android:layout_height="91dp"
+          android:layout_height="111dp"
           android:layout_margin="5dp"
           android:id="@+id/viewFlipper4" android:layout_row="2" android:layout_column="0">
         <FrameLayout
@@ -216,13 +217,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
               android:src="@drawable/green"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
 
           <TextView
               android:id="@+id/textView2"
@@ -239,13 +240,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:src="@drawable/pink"
               android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
 
           <TextView
               android:id="@+id/textView2"
@@ -268,13 +269,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
               android:src="@drawable/green"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
 
           <TextView
               android:id="@+id/textView2"
@@ -291,13 +292,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:src="@drawable/pink"
               android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -319,13 +320,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
               android:src="@drawable/green"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -341,13 +342,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:src="@drawable/pink"
               android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -361,7 +362,7 @@
       </ViewFlipper>
       <ViewFlipper
           android:layout_width="105dp"
-          android:layout_height="91dp"
+          android:layout_height="111dp"
           android:layout_margin="5dp"
           android:id="@+id/viewFlipper7" android:layout_row="3" android:layout_column="0">
         <FrameLayout
@@ -369,13 +370,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
               android:src="@drawable/green"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -391,13 +392,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:src="@drawable/pink"
               android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -419,13 +420,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
               android:src="@drawable/green"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -441,13 +442,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:src="@drawable/pink"
               android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -469,13 +470,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
               android:src="@drawable/green"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -491,13 +492,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:src="@drawable/pink"
               android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -510,8 +511,8 @@
         </FrameLayout>
       </ViewFlipper>
       <ViewFlipper
-          android:layout_width="81dp"
-          android:layout_height="95dp"
+          android:layout_width="101dp"
+          android:layout_height="111dp"
           android:layout_margin="5dp"
           android:id="@+id/viewFlipper10" android:layout_row="4" android:layout_column="0">
         <FrameLayout
@@ -519,13 +520,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
               android:src="@drawable/green"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -541,13 +542,13 @@
             android:layout_width="wrap_content">
 
           <ImageButton
-              android:layout_width="81dp"
-              android:layout_height="95dp"
+              android:layout_width="101dp"
+              android:layout_height="111dp"
               android:scaleType="fitCenter"
               android:text="New Button"
               android:src="@drawable/pink"
               android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-              android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+              android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
           <TextView
               android:id="@+id/textView2"
               android:layout_width="wrap_content"
@@ -573,16 +574,16 @@
 
       <ImageButton
           android:layout_column="2"
-          android:layout_width="81dp"
-          android:layout_height="95dp"
+          android:layout_width="101dp"
+          android:layout_height="111dp"
           android:scaleType="fitCenter"
           android:text="New Button"
           android:src="@drawable/colors"
           android:id="@+id/button13"
           android:background="@android:color/transparent"
           android:clickable="true"
-          android:height="81dp"
-          android:width="95dp"
+          android:height="101dp"
+          android:width="111dp"
           android:onClick="onClickChangeMode"/>
 
     </GridLayout>
@@ -591,8 +592,8 @@
                 android:layout_height="match_parent">
 
       <ImageButton
-          android:layout_width="81dp"
-          android:layout_height="91dp"
+          android:layout_width="101dp"
+          android:layout_height="111dp"
           android:id="@+id/playSongButton" android:layout_row="0" android:layout_column="0"
 
           android:scaleType="fitCenter"
@@ -603,14 +604,14 @@
       <!--android:layout_columnSpan = "0"/>-->
 
       <ImageView
-          android:layout_width="81dp"
-          android:layout_height="91dp"
+          android:layout_width="101dp"
+          android:layout_height="111dp"
           android:id="@+id/imageView" android:layout_row="0" android:layout_column="1"/>
       <!--android:layout_columnSpan = "2"/>-->
 
       <ImageButton
-          android:layout_width="81dp"
-          android:layout_height="91dp"
+          android:layout_width="101dp"
+          android:layout_height="111dp"
           android:src="@drawable/random"
           android:scaleType="fitCenter"
           android:background="@android:color/transparent"
@@ -623,21 +624,21 @@
           android:layout_margin="5dp"
           android:id="@+id/viewFlipperc1" android:layout_row="1" android:layout_column="0">
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:id="@+id/button1" android:background="@android:color/transparent" android:clickable="true"
             android:src="@drawable/green"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:src="@drawable/pink"
             android:id="@+id/button11" android:background="@android:color/transparent" android:clickable="true"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
       </ViewFlipper>
       <ViewFlipper
           android:layout_width="wrap_content"
@@ -645,21 +646,21 @@
           android:layout_margin="5dp"
           android:id="@+id/viewFlipperc2" android:layout_row="1" android:layout_column="1">
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:id="@+id/button2" android:background="@android:color/transparent" android:clickable="true"
             android:src="@drawable/green"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
         <ImageButton
             android:layout_width="86dp"
-            android:layout_height="95dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:src="@drawable/pink"
             android:id="@+id/button12" android:background="@android:color/transparent" android:clickable="true"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
 
       </ViewFlipper>
       <ViewFlipper
@@ -668,43 +669,43 @@
           android:layout_margin="5dp"
           android:id="@+id/viewFlipperc3" android:layout_row="1" android:layout_column="2">
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
             android:src="@drawable/green"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:src="@drawable/pink"
             android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
       </ViewFlipper>
       <ViewFlipper
           android:layout_width="105dp"
-          android:layout_height="91dp"
+          android:layout_height="111dp"
           android:layout_margin="5dp"
           android:id="@+id/viewFlipperc4" android:layout_row="2" android:layout_column="0">
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
             android:src="@drawable/green"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:src="@drawable/pink"
             android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
       </ViewFlipper>
       <ViewFlipper
           android:layout_width="wrap_content"
@@ -712,21 +713,21 @@
           android:layout_margin="5dp"
           android:id="@+id/viewFlipperc5" android:layout_row="2" android:layout_column="1">
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
             android:src="@drawable/green"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:src="@drawable/pink"
             android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
       </ViewFlipper>
       <ViewFlipper
           android:layout_width="wrap_content"
@@ -734,43 +735,43 @@
           android:layout_margin="5dp"
           android:id="@+id/viewFlipperc6" android:layout_row="2" android:layout_column="2">
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
             android:src="@drawable/green"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:src="@drawable/pink"
             android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
       </ViewFlipper>
       <ViewFlipper
           android:layout_width="105dp"
-          android:layout_height="91dp"
+          android:layout_height="111dp"
           android:layout_margin="5dp"
           android:id="@+id/viewFlipperc7" android:layout_row="3" android:layout_column="0">
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
             android:src="@drawable/green"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:src="@drawable/pink"
             android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
       </ViewFlipper>
       <ViewFlipper
           android:layout_width="wrap_content"
@@ -778,21 +779,21 @@
           android:layout_margin="5dp"
           android:id="@+id/viewFlipperc8" android:layout_row="3" android:layout_column="1">
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
             android:src="@drawable/green"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:src="@drawable/pink"
             android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
       </ViewFlipper>
       <ViewFlipper
           android:layout_width="wrap_content"
@@ -800,56 +801,56 @@
           android:layout_margin="5dp"
           android:id="@+id/viewFlipperc9" android:layout_row="3" android:layout_column="2">
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
             android:src="@drawable/green"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:src="@drawable/pink"
             android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
       </ViewFlipper>
       <ViewFlipper
-          android:layout_width="81dp"
-          android:layout_height="95dp"
+          android:layout_width="101dp"
+          android:layout_height="111dp"
           android:layout_margin="5dp"
           android:id="@+id/viewFlipperc10" android:layout_row="4" android:layout_column="0">
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:id="@+id/button3" android:background="@android:color/transparent" android:clickable="true"
             android:src="@drawable/green"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
         <ImageButton
-            android:layout_width="81dp"
-            android:layout_height="95dp"
+            android:layout_width="101dp"
+            android:layout_height="111dp"
             android:scaleType="fitCenter"
             android:text="New Button"
             android:src="@drawable/pink"
             android:id="@+id/button13" android:background="@android:color/transparent" android:clickable="true"
-            android:height="81dp" android:width="95dp" android:onClick="onClickBtn"/>
+            android:height="101dp" android:width="111dp" android:onClick="onClickBtn"/>
       </ViewFlipper>
       <ImageButton
           android:layout_column="2"
-          android:layout_width="81dp"
-          android:layout_height="95dp"
+          android:layout_width="101dp"
+          android:layout_height="111dp"
           android:scaleType="fitCenter"
           android:text="New Button"
           android:src="@drawable/numbers"
           android:id="@+id/buttonc13"
           android:background="@android:color/transparent"
           android:clickable="true"
-          android:height="81dp"
-          android:width="95dp"
+          android:height="101dp"
+          android:width="111dp"
           android:onClick="onClickChangeMode"/>
 
 
