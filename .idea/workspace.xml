@@ -14,7 +14,7 @@
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
       <GlobalState>
-        <option name="device" value="10.1in WXGA (Tablet)" />
+        <option name="device" value="3.7in WVGA (Nexus One)" />
         <option name="dockMode" value="" />
         <option name="nightMode" value="notnight" />
         <option name="targetHashString" value="android-15" />
@@ -22,103 +22,12 @@
       </GlobalState>
     </option>
     <device-configurations>
-      <entry key="file://$PROJECT_DIR$/res/layout-sw360dp/activity_main.xml" value="Portrait" />
       <entry key="file://$PROJECT_DIR$/res/layout-sw600dp/activity_main.xml" value="Portrait" />
     </device-configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2315585-1acb-4785-9772-dc968c377d5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/brown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/buy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/buy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/buy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/buy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/buy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/colors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/colors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/colors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/colors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/colors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/nota.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/nota.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/nota.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/nota.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/nota.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/numbers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/numbers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/numbers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/numbers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/numbers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/random.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/random.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/random.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/random.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/random.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-sw360dp/activity_main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-sw600dp/activity_main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/buttonimage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/buttonimage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/buttonimage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/buttonimage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/buttonimage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/roundshapebtn.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-ldpi/roundshapebtn.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/roundshapebtn.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/roundshapebtn.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xxhdpi/roundshapebtn.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/exclus/talkincolorsquares/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/exclus/talkincolorsquares/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-sw360dp/activity_main.xml" afterPath="$PROJECT_DIR$/res/layout-sw360dp/activity_main.xml" />
     </list>
     <ignored path="TalkinColorSquares.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -229,10 +138,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="activity_main.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/layout-sw360dp/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="38" selection-start="259" selection-end="259" vertical-scroll-proportion="-1.7701149">
+            <state line="22" column="75" selection-start="787" selection-end="787" vertical-scroll-proportion="0.63350785">
               <folding />
             </state>
           </provider>
@@ -262,10 +171,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout-sw600dp/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="44" selection-start="602" selection-end="602" vertical-scroll-proportion="0.4292683">
+            <state line="16" column="44" selection-start="602" selection-end="602" vertical-scroll-proportion="-11.354838">
               <folding />
             </state>
           </provider>
@@ -331,8 +240,8 @@
         <option value="$PROJECT_DIR$/res/layout-sw700dp/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/com/exclus/talkincolorsquares/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/layout-sw600dp/activity_main.xml" />
-        <option value="$PROJECT_DIR$/res/layout-sw360dp/activity_main.xml" />
         <option value="$PROJECT_DIR$/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/res/layout-sw360dp/activity_main.xml" />
       </list>
     </option>
   </component>
@@ -585,11 +494,11 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/animatedview" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="SH12ERT00102" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="3.7Inch" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="GalaxyNexus" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
@@ -981,9 +890,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-sw360dp/activity_main.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout-sw600dp/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="38" selection-start="259" selection-end="259" vertical-scroll-proportion="-1.7701149">
+        <state line="16" column="44" selection-start="602" selection-end="602" vertical-scroll-proportion="-11.354838">
           <folding />
         </state>
       </provider>
@@ -1001,9 +910,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-sw600dp/activity_main.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout-sw360dp/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="44" selection-start="602" selection-end="602" vertical-scroll-proportion="0.4292683">
+        <state line="22" column="75" selection-start="787" selection-end="787" vertical-scroll-proportion="0.63350785">
           <folding />
         </state>
       </provider>
