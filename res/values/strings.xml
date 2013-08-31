@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TalkinColorSquares</string>
+    <string name="app_name">Числа и Цветове</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="alert_title">За играта</string>
+    <string name="alert_content">С играта 'Числа и цветове' ученето е лесно и забавно. Детето ви неусетно ще научи числата и цветовете. При натискане  на съответния бутон детето вижда и чува цифрата или цвета. Играта е подходяща за деца от 2 до 5 години.</string>
+    <string name="alert_button">Играй!</string>
 
 </resources>

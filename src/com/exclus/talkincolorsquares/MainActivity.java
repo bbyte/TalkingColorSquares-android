@@ -8,6 +8,11 @@ package com.exclus.talkincolorsquares;
  * To change this template use File | Settings | File Templates.
  */
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.app.Activity;
 import android.os.Handler;
@@ -58,10 +63,37 @@ public class MainActivity extends Activity
 
     private static MediaPlayer mediaPlayer;
 
+    SharedPreferences prefs = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        prefs = getSharedPreferences(this.getPackageName(), MODE_PRIVATE);
+
+        if (isFirstRun()) {
+
+            addShortcut(getString(R.string.app_name));
+
+            AlertDialog.Builder alertDialog = new AlertDialog.Builder(MainActivity.this);
+            alertDialog.setTitle(R.string.alert_title);
+            alertDialog.setMessage(R.string.alert_content);
+            alertDialog.setNeutralButton(R.string.alert_button, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    //To change body of implemented methods use File | Settings | File Templates.
+                }
+            });
+
+            alertDialog.show();
+
+            setFirstRun();
+        }
+
+
+        // we want to control audio volume on the app from hardware buttons
+        setVolumeControlStream(AudioManager.STREAM_MUSIC);
 
         screenLock = true;
 
@@ -301,7 +333,6 @@ public class MainActivity extends Activity
         if (modeIsNumbers) {
 
             setupNumbers(isMoreNumbers);
-
         } else {
 
             for (i = startI; i < (nvalues + startI); i++) {
@@ -309,24 +340,7 @@ public class MainActivity extends Activity
                 AnimationFactory.flipTransition(vf[i], FlipDirection.LEFT_RIGHT);
             }
 
-
             for (i = 0; i < a.length; i++) {
-
-//                vf[i + startI].setTag(numbers[a[i] - 1]);
-//
-//                FrameLayout frameLayouts[] = {(FrameLayout) vf[i].getChildAt(0), (FrameLayout) vf[i].getChildAt(1)};
-//
-//                TextView textView[] = {(TextView) frameLayouts[0].getChildAt(1), (TextView) frameLayouts[1].getChildAt(1)};
-//
-//                textView[0].setText(Integer.toString(a[i]));
-//                textView[1].setText(Integer.toString(a[i]));
-//
-//                ImageButton ss[] = {(ImageButton) frameLayouts[0].getChildAt(0), (ImageButton) frameLayouts[1].getChildAt(0)};
-//
-//                ss[0].setImageResource(getResources().getIdentifier(colors[a[i] - 1],
-//                        "drawable", getPackageName()));
-//                ss[1].setImageResource(getResources().getIdentifier(colors[a[i] - 1],
-//                        "drawable", getPackageName()));
 
                 vf[i + startI].setTag(colors[buttonArrangment[i] - 1]);
 
@@ -336,7 +350,6 @@ public class MainActivity extends Activity
                         "drawable", getPackageName()));
                 ss[1].setImageResource(getResources().getIdentifier(colors[buttonArrangment[i] - 1],
                         "drawable", getPackageName()));
-
             }
         }
 
@@ -442,6 +455,13 @@ public class MainActivity extends Activity
 
         buttonArrangment = createButtonArrangment();
         setupNumbers(isMoreNumbers);
+
+        ImageButton button = (ImageButton) v;
+
+        if (isMoreNumbers)
+            ((ImageButton) v).setImageResource(R.drawable.numbers);
+        else
+            ((ImageButton) v).setImageResource(R.drawable.buy);
     }
 
     // onTouch() method gets called each time you perform any touch event with screen
@@ -469,5 +489,41 @@ public class MainActivity extends Activity
         }
         else
             return false;
+    }
+
+    private boolean isFirstRun()
+    {
+        if (prefs.getBoolean("firstrun", true)) {
+
+            return(true);
+        } else {
+            return(false);
+        }
+    }
+
+    private void setFirstRun()
+    {
+        // Do first run stuff here then set 'firstrun' as false
+        // using the following line to edit/commit prefs
+        prefs.edit().putBoolean("firstrun", false).commit();
+    }
+
+    private void addShortcut(String shortcutName)
+    {
+        // create shortcut if requested
+        Intent.ShortcutIconResource icon =
+                Intent.ShortcutIconResource.fromContext(this, R.drawable.numbers);
+
+        Intent intent = new Intent();
+
+        Intent launchIntent = new Intent(this,MainActivity.class);
+        intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, launchIntent);
+        intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, shortcutName);
+        intent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, icon);
+
+        setResult(RESULT_OK, intent);
+
+        intent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
+        getApplicationContext().sendBroadcast(intent);
     }
 }
