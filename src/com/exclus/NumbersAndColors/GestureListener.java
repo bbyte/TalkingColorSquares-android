@@ -1,4 +1,4 @@
-package com.exclus.talkincolorsquares;
+package com.exclus.NumbersAndColors;
 
 import android.view.GestureDetector;
 import android.view.MotionEvent;

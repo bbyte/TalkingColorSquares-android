@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TalkinColorSquares.iml" filepath="$PROJECT_DIR$/TalkinColorSquares.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NumbersAndColors.iml" filepath="$PROJECT_DIR$/NumbersAndColors.iml" />
     </modules>
   </component>
 </project>

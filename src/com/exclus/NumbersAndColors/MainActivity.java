@@ -1,4 +1,4 @@
-package com.exclus.talkincolorsquares;
+package com.exclus.NumbersAndColors;
 
 /**
  * Created with IntelliJ IDEA.
@@ -23,6 +23,7 @@ import android.widget.*;
 import android.view.*;
 
 import android.view.animation.Animation;
+import com.flurry.android.FlurryAgent;
 import com.tekle.oss.android.animation.AnimationFactory;
 import com.tekle.oss.android.animation.AnimationFactory.FlipDirection;
 
@@ -69,6 +70,8 @@ public class MainActivity extends Activity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FlurryAgent.onStartSession(this, "H8G32BXN6G7QMVWWKTKP");
 
         prefs = getSharedPreferences(this.getPackageName(), MODE_PRIVATE);
 
@@ -174,6 +177,14 @@ public class MainActivity extends Activity
         mGestureDetector = new GestureDetector(this, new GestureListener());
     }
 
+    @Override
+    protected void onStop()
+    {
+        super.onStop();
+        FlurryAgent.onEndSession(this);
+    }
+
+
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        // Inflate the menu; this adds items to the action bar if it is present.
@@ -215,6 +226,8 @@ public class MainActivity extends Activity
         if (screenLock) return;
         screenLock = true;
 
+        FlurryAgent.logEvent("Change mode clicked");
+
         if (modeIsNumbers)
             mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.voice2);
         else
@@ -239,6 +252,8 @@ public class MainActivity extends Activity
     {
         if (screenLock) return;
         screenLock = true;
+
+        FlurryAgent.logEvent("Play song clicked");
 
 //        MediaPlayer mediaPlayer;
 
@@ -462,6 +477,8 @@ public class MainActivity extends Activity
             ((ImageButton) v).setImageResource(R.drawable.numbers);
         else
             ((ImageButton) v).setImageResource(R.drawable.buy);
+
+        FlurryAgent.logEvent("Numbers change clicked");
     }
 
     // onTouch() method gets called each time you perform any touch event with screen
@@ -480,7 +497,7 @@ public class MainActivity extends Activity
             if (GestureListener.fling) {
 //                Toast.makeText(this,GestureListener.currentGestureDetected,Toast.LENGTH_SHORT).show();
 
-                buyClicked(bigVf); // bigVF hust to have some View
+                buyClicked(findViewById(R.id.buyButton)); // bigVF must to have some View
 
                 GestureListener.fling = false;
             }
